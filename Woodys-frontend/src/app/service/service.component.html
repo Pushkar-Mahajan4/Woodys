@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Service | My Car Shop</title>
+
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html" routerLink="/addvehicle">Add Vehicle</a></li>
+				<li><a href="about.html" routerLink="/myvehicles">My Vehicles</a></li>
+				<li><a href="services.html" routerLink="/createappointment">Create Appointment</a></li>
+				<li><a href="contact.html" routerLink="/myappointment">My Appointments</a></li>
+			</ul>
+		</nav>
+		<h1>Car Service</h1>
+	</header>
+	<main>
+		<section class="service">
+			<h2>Check Service Status</h2>
+			<p>Enter your service request ID to check the status of your car service:</p>
+			<form action="#" method="post">
+				<label for="service-id">Service Request ID:</label>
+				<input type="text" id="service-id" name="service-id" required>
+				<input type="submit" value="Check Status">
+			</form>
+		</section>
+		<section class="service">
+			<h2>Service History</h2>
+			<p>View your car's service history:</p>
+			<a href="#" class="button">View Service History</a>
+		</section>
+		<section class="service">
+			<h2>Payment</h2>
+			<p>Pay for your car service:</p>
+			<a href="#" class="button">Pay Now</a>
+		</section>
+		<section class="service">
+			<h2>Location</h2>
+			<p>Find our car service center:</p>
+			<a href="#" class="button">Find Location</a>
+		</section>
+		<section class="service">
+			<h2>Vehicle Type</h2>
+			<p>Select your car's make and model:</p>
+			<form action="#" method="post">
+				<label for="make">Make:</label>
+				<input type="text" id="make" name="make" required>
+				<label for="model">Model:</label>
+				<input type="text" id="model" name="model" required>
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+	</main>
+
+</body>
+</html>

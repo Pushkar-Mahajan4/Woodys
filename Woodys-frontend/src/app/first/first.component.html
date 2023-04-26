@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manager Page</title>
+
+  </head>
+  <body>
+    <header>
+      <h1>Manager Page</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Update Status</a></li>
+          <li><a href="#">Change Prices</a></li>
+          <li><a href="#">View Transactions</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="status-container">
+        <h2>Update Customer Status</h2>
+        <form>
+          <label for="vehicle-number">Vehicle Number:</label>
+          <input type="text" id="vehicle-number" name="vehicle-number">
+          <label for="status">Status:</label>
+          <select id="status" name="status">
+            <option value="confirmed">Confirmed</option>
+            <option value="pending">Pending</option>
+            <option value="cancelled">Cancelled</option>
+          </select>
+          <button type="submit">Update</button>
+        </form>
+      </div>
+      <div class="price-container">
+        <h2>Change Car Service Prices</h2>
+        <form>
+          <label for="service-type">Service Type:</label>
+          <input type="text" id="service-type" name="service-type">
+          <label for="new-price">New Price:</label>
+          <input type="text" id="new-price" name="new-price">
+          <button type="submit">Change</button>
+        </form>
+      </div>
+      <div class="transaction-container">
+        <h2>View Transactions</h2>
+        <form>
+          <label for="start-date">Start Date:</label>
+          <input type="date" id="start-date" name="start-date">
+          <label for="end-date">End Date:</label>
+          <input type="date" id="end-date" name="end-date">
+          <button type="submit">View</button>
+        </form>
+        <table>
+          <thead>
+            <tr>
+              <th>Transaction ID</th>
+              <th>Service Type</th>
+              <th>Vehicle Number</th>
+              <th>Price</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Oil Change</td>
+              <td>ABC123</td>
+              <td>$50.00</td>
+              <td>2023-04-25</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Brake Repair</td>
+              <td>XYZ456</td>
+              <td>$150.00</td>
+              <td>2023-04-24</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Tire Rotation</td>
+              <td>DEF789</td>
+              <td>$75.00</td>
+              <td>2023-04-23</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

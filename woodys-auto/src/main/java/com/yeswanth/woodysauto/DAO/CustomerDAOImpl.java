@@ -28,7 +28,6 @@ public class CustomerDAOImpl implements CustomerDAO{
     @Override
     @Transactional
     public Customer save(Customer customer) {
-        System.out.println("THIS IS INSIDE IMPL" + customer);
         entityManager.merge(customer);
         return customer;
     }

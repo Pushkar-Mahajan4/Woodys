@@ -25,4 +25,9 @@ public class CustomerController {
         return newCustomer;
     }
 
+    @GetMapping("/")
+    public String getHello(){
+        return ("Hello world");
+    }
+
 }

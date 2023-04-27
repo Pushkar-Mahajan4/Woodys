@@ -1,21 +1,20 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { FirstComponent } from './first/first.component';
-import { LoginComponent } from './login/login.component';
-import { RouterModule, Routes } from '@angular/router';
-import { RegisterComponent } from './register/register.component';
-import { ServiceComponent } from './service/service.component';
-import { AddvehicleComponent } from './addvehicle/addvehicle.component';
-import { MyvehiclesComponent } from './myvehicles/myvehicles.component';
-import { CreateappointmentComponent } from './createappointment/createappointment.component';
-import { MyappointmentComponent } from './myappointment/myappointment.component';
-import { ManagerloginComponent } from './managerlogin/managerlogin.component';
-import { HomecomponentComponent } from './homecomponent/homecomponent.component';
-
-
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { FirstComponent } from "./first/first.component";
+import { LoginComponent } from "./login/login.component";
+import { RouterModule, Routes } from "@angular/router";
+import { RegisterComponent } from "./register/register.component";
+import { ServiceComponent } from "./service/service.component";
+import { AddvehicleComponent } from "./addvehicle/addvehicle.component";
+import { MyvehiclesComponent } from "./myvehicles/myvehicles.component";
+import { CreateappointmentComponent } from "./createappointment/createappointment.component";
+import { MyappointmentComponent } from "./myappointment/myappointment.component";
+import { ManagerloginComponent } from "./managerlogin/managerlogin.component";
+import { HomecomponentComponent } from "./homecomponent/homecomponent.component";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -30,13 +29,9 @@ import { HomecomponentComponent } from './homecomponent/homecomponent.component'
     MyappointmentComponent,
     ManagerloginComponent,
     HomecomponentComponent,
-    
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
